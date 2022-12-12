@@ -1,5 +1,5 @@
 <?php
-
+include_once __DIR__ . '/Genres.php';
 class Movie
 {
     public $pic;
@@ -10,7 +10,7 @@ class Movie
     private $rentPrice;
     public static $startingPrice = 2;
 
-    function __construct($_pic, $_title, $_duration, $_year, $_genres = [])
+    function __construct($_pic, $_title, $_duration, $_year, Genre $_genres)
     {
         $this->pic = $_pic;
         $this->title = $_title;

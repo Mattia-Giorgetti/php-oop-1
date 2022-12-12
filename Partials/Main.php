@@ -19,7 +19,7 @@
         </p>
         <p>
             Genere:
-            <?php echo implode($item->genres) ?>
+            <?php echo ($item->genres->fistGenre) . '/' . ($item->genres->secondGenre) ?>
         </p>
         <p>
             Prezzo noleggio:
