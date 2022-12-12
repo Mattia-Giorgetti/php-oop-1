@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: black;
 }
@@ -5,21 +10,41 @@ h1 {
     text-align: center;
     font-size: 3.5rem;
     color: red;
+    margin: 2rem;
 }
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 4rem;
 }
 .movie_card {
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 2rem);
     background-color: #262626;
     padding: 1rem;
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
 }
 .movie_pic img {
     max-width: 100%;
     height: 500px;
+}
+.footer {
+    background-color: #262626;
+    width: 100%;
+    height: 80px;
+}
+.footer span {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: red;
+    line-height: 80px
 }
